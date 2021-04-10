@@ -23,14 +23,6 @@ const useStyle = makeStyles(() => ({
         minHeight: "450px",
         backgroundColor: "red",
     },
-    gradient: {
-        position: "absolute",
-        bottom: "0",
-        minHeight: "50%",
-        minWidth: "100%",
-        background: "transparent linear-gradient(180deg, #966BC2 0%, #437BBE59 100%) 0% 0% no-repeat padding-box",
-        zIndex: "50"
-    }
     
 }))
 
@@ -45,9 +37,7 @@ const Apply = () => {
                 controls url = {url}
                 poster = "http://source.unsplash.com/random"
                 className = {classes.player}
-                >
-                    <Box className = {classes.gradient}></Box>
-                </ReactPlayer>
+                />
             </Container>
         </>
     )
